@@ -35,7 +35,7 @@ public class summoncolor : MonoBehaviour
         click.SetActive(false);
         click.SetActive(true);
         PlayerPrefs.SetInt("pull",1);
-        PlayerPrefs.SetInt("material1",Random.Range(0,1000));
+        PlayerPrefs.SetInt("material1",Random.Range(0,999));
         PlayerPrefs.SetInt("i",0);
         canvas1.SetActive(true);
         StartCoroutine(dunnowhy());
@@ -48,7 +48,7 @@ public class summoncolor : MonoBehaviour
         PlayerPrefs.SetInt("pull",10);
         for(int i=1;i<11;i++)
         {
-            PlayerPrefs.SetInt("material"+i,Random.Range(0,1000));
+            PlayerPrefs.SetInt("material"+i,Random.Range(0,999));
             Debug.Log(PlayerPrefs.GetInt("material"+i));
         }
         PlayerPrefs.SetInt("i",0);
